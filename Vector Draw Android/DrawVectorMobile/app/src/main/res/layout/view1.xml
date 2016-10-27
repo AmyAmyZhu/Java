@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerInParent="true"
+    android:layout_centerVertical="true" >
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/selection"
+        android:src="@drawable/selection"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eraser"
+        android:src="@drawable/eraser"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/selection"
+        android:layout_toEndOf="@+id/selection" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rectangle"
+        android:src="@drawable/rectangle"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/eraser"
+        android:layout_toEndOf="@+id/eraser"  />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/circle"
+        android:src="@drawable/circle"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/rectangle"
+        android:layout_toEndOf="@+id/rectangle" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/line"
+        android:src="@drawable/line"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/circle"
+        android:layout_toEndOf="@+id/circle" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fill"
+        android:src="@drawable/fill"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/line"
+        android:layout_toEndOf="@+id/line" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:text="R"
+        android:id="@+id/red"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/selection"
+        android:layout_toLeftOf="@+id/eraser"
+        android:layout_toStartOf="@+id/eraser" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:text="B"
+        android:id="@+id/blue"
+        android:layout_below="@+id/eraser"
+        android:layout_toLeftOf="@+id/rectangle"
+        android:layout_toRightOf="@+id/selection"
+        android:layout_toEndOf="@+id/selection"
+        android:layout_toStartOf="@+id/rectangle" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:text="G"
+        android:id="@+id/green"
+        android:layout_below="@+id/rectangle"
+        android:layout_toLeftOf="@+id/circle"
+        android:layout_toEndOf="@+id/eraser"
+        android:layout_toRightOf="@+id/eraser"
+        android:layout_toStartOf="@+id/circle" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/thin"
+        android:src="@drawable/substract"
+        android:layout_below="@+id/rectangle"
+        android:layout_toRightOf="@+id/green"
+        android:layout_toEndOf="@+id/green" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mid"
+        android:src="@drawable/substract2"
+        android:layout_below="@+id/circle"
+        android:layout_toRightOf="@+id/thin"
+        android:layout_toEndOf="@+id/thin" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/thick"
+        android:src="@drawable/minus"
+        android:layout_toEndOf="@+id/mid"
+        android:layout_below="@+id/line"
+        android:layout_toRightOf="@+id/mid" />
+
+
+</RelativeLayout>
